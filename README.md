@@ -19,14 +19,22 @@ Projekt für Test im UI Modul
 ![](drafts/desktop.JPG)
 ![](drafts/desktop-button-hover.JPG)
 
-###   __/60 Punkten
+###   46/60 Punkten
 #### Punktabzüge für:
-- [_] (10) Elemente passen sich nicht an Fensterbreite an
+- [x] (8) Elemente passen sich nicht an Fensterbreite an
+```diff
+- Scrollleiste am unteren Fensterrand
+- Das Formular verschwindet bei viel zu breitem Fenster schon nach unten. Stattdessen sollte sich die Breite des Kastens an die Fensterbreite anpassen
+- Die Breite des Textbereichs passt sich auch nicht an und er wird deshalb bei mobile abgeschnitten
+```
 - [_] (10) Tags nicht geschlossen oder falsch verschachtelt
 - [_] (5) Block-Tag in Inline-Tag
 - [_] (5) Kinder-Tags im Code nicht eingerückt
 - [_] (10) Zweckfremde Tags verwendet
 - [_] (10) Fehlende essetielle Tags (z.B. Meta-Tags)
 - [_] (5) Falsche Datei-Pfade
-- [_] (10) CSS-Selektoren, die bei Änderungen im HTML sehr leicht fehlschlagen können
+- [x] (6) CSS-Selektoren, die bei Änderungen im HTML sehr leicht fehlschlagen können
+```diff
+- die Selektoren `img` und `span` sind diesem Fall zu weitreichend, weil sie diese Styles allen Bildern und spans geben würden, die auf im Dokument in Zukunft hinzugefügt werden.
+```
 - [_] (5) Fehlende essentielle Tag-Attribute
